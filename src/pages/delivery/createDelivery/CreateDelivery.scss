@@ -1,0 +1,160 @@
+.worker-wrapper {
+  width: 40%;
+  margin: 150px auto;
+  padding: 0 40px;
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 1px 4px 0 rgb(46 61 73 / 10%);
+
+
+  .worker-header {
+    padding: 1.5rem 1.875rem 1.25rem 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #34495e;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    text-transform: capitalize;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 30px 0;
+
+    label {
+      margin: 10px 0;
+      font-size: 1rem;
+      color: #34495e;
+    }
+
+    .input {
+      padding: 15px;
+      transition: 0.3s;
+      box-sizing: border-box;
+      border-radius: 1.25rem;
+      background: #fff;
+      border: 1px solid #34495e;
+      color: #34495e;
+      outline: none;
+
+      &::placeholder {
+        color: #34495e;
+      }
+
+      &:placeholder-shown ~ .form-label {
+        font-size: 16px;
+        cursor: text;
+        top: 20px;
+      }
+    }
+
+    textarea {
+      padding: 15px;
+      transition: 0.3s;
+      box-sizing: border-box;
+      border-radius: 1.25rem;
+      background: #fff;
+      border: 1px solid #34495e;
+      color: #34495e;
+      outline: none;
+
+      &::placeholder {
+        color: #34495e;
+      }
+
+      &:placeholder-shown ~ .form-label {
+        font-size: 16px;
+        cursor: text;
+        top: 20px;
+      }
+
+    }
+
+    select {
+      padding: 15px;
+      transition: 0.3s;
+      box-sizing: border-box;
+      border-radius: 1.25rem;
+      background: #fff;
+      border: 1px solid #34495e;
+      color: #34495e;
+      outline: none;
+
+      &::placeholder {
+        color: #34495e;
+      }
+
+      &:placeholder-shown ~ .form-label {
+        font-size: 16px;
+        cursor: text;
+        top: 20px;
+      }
+    }
+
+    .company-select {
+      padding: 15px;
+      transition: 0.3s;
+      box-sizing: border-box;
+      border-radius: 1.25rem;
+      background: #fff;
+      border: 1px solid #34495e;
+      color: #34495e;
+      outline: none;
+
+      .company-name {
+        width: 100px;
+        cursor: pointer;
+        padding: 0.938rem 1.5rem;
+        border-radius: 10px !important;
+      }
+    }
+  }
+}
+
+.save-btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 0 1.8rem 0;
+  border-radius: 1.25rem;
+  font-weight: 500;
+  font-size: 1rem;
+
+  .save-btn {
+    //font-family: "Montserrat";
+    border: none;
+    text-decoration: none;
+    background: #5dba2f;
+    cursor: pointer;
+    padding: 0.938rem 1.5rem;
+    border-radius: 1.25rem;
+    font-size: 1rem;
+    color: #fff;
+    transition: 0.2s;
+    margin-right: 10px;
+
+    &:hover {
+      background: #2fa360;
+    }
+  }
+
+  .create-btn {
+    //font-family: "Montserrat";
+    border: none;
+    text-decoration: none;
+    background: #7e7e7e;
+    cursor: pointer;
+    padding: 0.938rem 1.5rem;
+    border-radius: 1.25rem;
+    font-size: 1rem;
+    color: #fff;
+    transition: 1s;
+
+
+    &:hover {
+      background: #f8f9fa;
+      color: #34495e;
+    }
+  }
+}

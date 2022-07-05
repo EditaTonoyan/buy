@@ -1,0 +1,156 @@
+.sidebar-wrapper {
+
+  .sidebar {
+    background: #34495e;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    transition: all 0.25s ease;
+    transform: translateX(-70%);
+    overflow-y: scroll;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: 20px 10px 20px 20px;
+      width: 30%;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        font-size: 16px;
+        border-bottom: 1px solid #fff;
+        transition: all 0.25s ease;
+        animation: fadeInRight .25s ease forwards;
+        opacity: 1;
+
+      }
+
+      .sidebar-list-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+        padding: 0 20px 0 10px;
+        cursor: pointer;
+        border-bottom: 1px solid #fff;
+
+        &:hover {
+          background: #000;
+        }
+
+        &:first-child {
+          justify-content: flex-end;
+          padding: 0;
+        }
+
+        .sidebar-list-item-link {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          padding: 20px 30px 20px;
+        }
+        .sidebar-burger-btn {
+          background: transparent;
+          border: none;
+          border-radius: 10px;
+          font-size: 22px;
+          position: fixed;
+          top: 4%;
+          left: 185px;
+          cursor: pointer;
+          outline: none;
+          color: #fff;
+        }
+      }
+
+      .sidebar-list-item-max {
+        &:first-child {
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 30px 0 20px;
+          &:hover {
+            opacity: 0.8;
+            transition: all 0.25s ease;
+            background: #000;
+            cursor: pointer;
+          }
+        }
+        .max-logo-onex {
+          width: 80%;
+          padding: 20px 20px 20px 10px;
+        }
+
+
+      }
+
+      .sidebar-list-item-min {
+        .min-logo-onex {
+          width: 30%;
+          padding: 20px;
+        }
+        &:hover {
+          opacity: 0.8;
+          transition: all 0.25s ease;
+          background: #000;
+          cursor: pointer;
+        }
+      }
+
+      .sidebar-list-item-icons {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .sidebar-list-item-dropdown {
+
+        .dropdown-list {
+
+          .dropdown-list-item {
+
+            .sidebar-list-item-link {
+              color: #fff;
+              text-decoration: none;
+              display: block;
+              padding: 10px 30px 10px;
+              width: 100%;
+              cursor: pointer;
+              &:hover {
+                opacity: 0.8;
+                transition: all 0.25s ease;
+                background: #000;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .active {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.25s ease;
+    transform: translateX(0);
+    z-index: 3;
+  }
+}
+
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}

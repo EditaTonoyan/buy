@@ -1,0 +1,128 @@
+.MuiTableRow-head {
+  overflow: hidden;
+}
+
+
+.buyForMeTable-wrapper {
+
+  .buyForMeTable-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    .buyForMeTable-title {
+      font-size: 28px;
+    }
+
+    .buyForMeTable-link-wrapper {
+
+      .buyForMeTable-link {
+        font-size: 22px;
+      }
+    }
+  }
+
+  .form-group {
+    position: relative;
+    margin: 30px 0;
+
+    label {
+      position: absolute;
+      right: 8px;
+      margin: 10px 0;
+      font-size: 1rem;
+      color: #34495e;
+    }
+
+    .input {
+      width: 100%;
+      padding: 10px 15px;
+      transition: 0.3s;
+      box-sizing: border-box;
+      border-radius: 1.25rem;
+      background: #fff;
+      border: 1px solid #34495e;
+      color: #34495e;
+      outline: none;
+      z-index: -1;
+
+      &::placeholder {
+        color: #34495e;
+      }
+
+      &:placeholder-shown ~ .form-label {
+        font-size: 16px;
+        cursor: text;
+        top: 20px;
+      }
+    }
+  }
+
+  .buy-for-me-filters-wrapper {
+    margin-bottom: 50px;
+
+    .buy-for-me-filters {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      margin: 20px 0;
+      overflow-x: scroll;
+      .checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        label {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .action-wrapper {
+    display: flex;
+    align-items: center;
+    //justify-content: space-between;
+
+    .action-link-wrapper {
+      width: auto;
+      background: transparent;
+      display: inline-block;
+      margin: 5px 0;
+
+      .action-link {
+        border: 1px solid #34495e;
+        border-radius: 10px;
+        padding: 5px 10px;
+      }
+    }
+  }
+}
+
+.table-link {
+  font-size: 16px;
+  color: #3a7091;
+}
+
+.product-name {
+  display: inline-block;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+
+.table--wrapper {
+  overflow-x: scroll;
+  padding: 20px 0 40px 0;
+
+  .table-items-count {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0 20px;
+  }
+}

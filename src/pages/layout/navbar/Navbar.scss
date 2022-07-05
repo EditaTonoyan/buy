@@ -1,0 +1,56 @@
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 0 0 24px;
+  margin-left: 75px;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  background: #fff;
+
+  .burger-btn {
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+    position: fixed;
+    top: 5%;
+    left: 270px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .active-btn {
+    left: 100px;
+    transition: all 0.25s ease;
+    transform: translateX(0);
+    top: 20px;
+  }
+
+  .navbar-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+
+    .navbar-logo {
+      width: 20%;
+      transform: translate(70%, 0);
+    }
+  }
+
+  .auth-info-wrapper {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    .auth-info {
+      margin-right: 20px;
+    }
+
+    .logout-btn {
+
+    }
+  }
+}

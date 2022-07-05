@@ -1,0 +1,4 @@
+export const GET_ORDERS = "GET_ORDERS";
+export const GET_DELIVERY = "GET_DELIVERY";
+export const UPDATE_ORDERS = "UPDATE_ORDERS";
+export const GET_EDITED_ORDERS = "GET_EDITED_ORDERS";
